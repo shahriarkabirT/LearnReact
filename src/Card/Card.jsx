@@ -1,15 +1,14 @@
 import styles from './Card.module.css'
-import tasin from '../assets/tasin.png'
 
-function Card(){
+function Card(props){
     return(
-        <div className={styles.Wrapper}>
+       
             <div className={styles.card}>
-                <img src={tasin} alt="img" />
-                <h3>Shahriar Kabir</h3>
-                <p>Software Engineer @CodeElevate</p>
+                <img src={props.image} alt="img" />
+                <h3>{props.name}</h3>
+                <p>{props.details}</p>
             </div>
-        </div>
+    
     );
 }
 

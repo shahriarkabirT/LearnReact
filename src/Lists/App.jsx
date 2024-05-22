@@ -1,5 +1,5 @@
 import List from './List.jsx'
-
+import styles from './List.module.css'
 function App(){
      //array of objects
     const fruits = [{id:1 , name:"apple", calories: 95},
@@ -14,11 +14,18 @@ function App(){
                     {id: 9, name: "corn", calories: 63}, 
                     {id: 10, name: "broccoli", calories: 50}];
     return(<>
+    <div className={styles.Wrapper}>
+        <div className="list">
+            <br></br>
+        <center><p><h2>This is the example of List coming from another JSX file as an array of objects</h2></p></center><br></br>
         <List items = {fruits} categories = "fruits"/>
-
+        </div>
         {/* short cercuiting */}
 
         {vegetables.length > 0 && <List items = {vegetables} categories = "vegitables"/> }
+
+        </div>
+    
         </>);
 }
 

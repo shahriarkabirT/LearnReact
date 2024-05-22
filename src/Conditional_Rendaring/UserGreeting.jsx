@@ -14,13 +14,13 @@ function UserGreeting(props){
     const styles = {
         backgroundColor: "RGB(75, 76, 87)",
         color: "white",
-        padding: "50px",
-        marginLeft:"50px",
         width:"100%",
+        display:"flex",
         justifyContent:"center",
-        
-
-        
+        alignItems:"center",
+        textAlign:"center",
+        height:"100vh",
+        justifyContent:"center",
       
     }
 

@@ -1,12 +1,6 @@
 import styles from './List.module.css'
 function List(props){
-    //                     //array of objects
-    // const fruits = [{id:1 , name:"apple", calories: 95},
-    //                 {id:2 , name:"orange", calories: 45},
-    //                 {id:3 , name:"banana", calories: 105},
-    //                 {id:4 , name:"coconut", calories: 159},
-    //                 {id:5 , name:"pineapple", calories: 37}];
-
+ 
                         //sorting
 
     // fruits.sort();
@@ -22,13 +16,15 @@ function List(props){
 
     const itemList = props.items;
     const categories = props.categories;
-    const listItems = itemList.map(itemList => <li key={itemList.id}> {itemList.name} : {itemList.calories}</li>);
+    const listItems = itemList.map(itemList => <div key={itemList.id}> {itemList.name} : {itemList.calories}</div>);
     
     
    
     return (<>
+        
         <p className={styles.titles}>{categories}:</p>
-        <ol className="listName">{listItems}</ol>
+        <div className={styles.listname}> {listItems}</div>
+        
     </>);
 }
 
