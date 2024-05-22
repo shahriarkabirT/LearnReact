@@ -21,6 +21,7 @@ function colorPicker(){
         <>
             
             <div className={styles.colorPickerContainer}>
+                <h2>Color Picker App:</h2>
                 <div><button className={styles.colorValue} value={colorValue} style={{backgroundColor:colorValue}} onClick={(event)=>copyToClipboard(event) }>
                     {colorValue}
                     </button></div>

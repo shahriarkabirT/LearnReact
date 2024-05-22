@@ -1,4 +1,4 @@
-import styles from './Click.module.css';
+import styles from './Button.module.css';
 import React,{useState} from 'react';
 function Button(){
 
@@ -34,13 +34,13 @@ function Button(){
     
     return (<><center>
     <br></br>
-    <button onClick={()=>handleClick("Shahriar")} >
+    <button className={styles.button} onClick={()=>handleClick("Shahriar")} >
         Don't Dare to Touch me 👺</button>
         <br></br>
         <br></br>
         {message}
         <br></br> <br></br>
-<button onClick={(e)=>handleSingleClick(e)} 
+<button className={styles.button}  onClick={(e)=>handleSingleClick(e)} 
 onDoubleClick={(e)=>handleDoubleClick(e)}>
     Click me</button>
         

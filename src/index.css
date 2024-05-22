@@ -9,3 +9,28 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.clickEvent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+}
+.button{
+    background: linear-gradient(45deg, #3f2759, #6f91cc);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+    height: 50px;
+    width:200px;
+    margin-left:43%;
+    font-family: 'Times New Roman', Times, serif;
+}

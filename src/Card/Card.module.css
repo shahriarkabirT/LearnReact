@@ -3,6 +3,8 @@
     height: 100vh;
     justify-content: center;
     background-color: rgb(38, 43, 48);
+    padding-left: 70px;
+    padding-top: 70px;
 }
 
 .card{

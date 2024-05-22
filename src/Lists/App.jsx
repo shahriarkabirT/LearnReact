@@ -17,7 +17,7 @@ function App(){
     <div className={styles.Wrapper}>
         <div className="list">
             <br></br>
-        <center><p><h2>This is the example of List coming from another JSX file as an array of objects</h2></p></center><br></br>
+        <center><p>This is the example of List coming from another JSX file as an array of objects</p></center><br></br>
         <List items = {fruits} categories = "fruits"/>
         </div>
         {/* short cercuiting */}

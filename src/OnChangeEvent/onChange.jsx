@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import styles from './onChange.module.css'
 function onChange(){
     const [name, setName] = useState("");
     const [comment, setComment] = useState("");
@@ -17,7 +17,8 @@ function onChange(){
     const updateHobby = (event) =>{
         setHobby(event.target.value);
     }
-    return(<div>
+    return(<div className={styles.wrapper}>
+        <h2>Example of OnChange event</h2>
         <p>Name: {name}</p>
        
         <input value={name} onChange={(event)=>updateName(event)} type="text"/>
