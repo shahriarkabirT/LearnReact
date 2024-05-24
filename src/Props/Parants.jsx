@@ -9,7 +9,7 @@ function Parants(){
     return(
        <>
         <div style={styles}>
-            <p>This is the example of props:</p><br />
+            <h2>This is the example of props:</h2>
             <p>The value is coming from another JSX file and it is accessed by props property</p>
         <Student name="Shahriar" age = {23} isStudent ={false}/>
         <Student name="Shipon" age = {25} isStudent ={true}/>

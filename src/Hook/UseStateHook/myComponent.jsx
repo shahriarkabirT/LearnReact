@@ -19,27 +19,15 @@ function myComponent(){
     const toggle = ()=>{
         setIsMarried(!maritalStatus);
     }
-    const styles = {
-        height: "100vh",
-        width: "100%",
-        backgroundColor: "#213d4f",
-        display:"flex",
-        flexDirection:"column",
-        textAlign:"center",
-    }
-    const button ={
-        
-    }
-    return(<div style={styles}>
-        <h2>Example of UseState()</h2>
+    return(<div>
+        <h2>Basic Example of UseState()</h2>
         <p>Name: {name}</p> 
-        {<button className="button" onClick={()=>updateName("Towfique")}>Change Name</button>}
+        {<button onClick={()=>updateName("Towfique")}>Change Name</button>}
         <p>Age: {age}</p> 
-        <br></br>
-        {<button className="button" onClick={()=>increamentAge()}>Increament Age</button>}<br></br>
-        {<button className="button" onClick={()=>decreamentAge()}>Decreament Age</button>}
+        {<button onClick={()=>increamentAge()}>Increament Age</button>}
+        {<button onClick={()=>decreamentAge()}>Decreament Age</button>}
         <p>Is he married: {maritalStatus ? "Yes":"No"}</p> 
-        {<button className="button" onClick={()=>toggle()}>Change Status</button>}
+        {<button onClick={()=>toggle()}>Change Status</button>}
     </div>);
 }
 export default myComponent;
