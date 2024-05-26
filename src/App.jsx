@@ -7,6 +7,7 @@ import Card from './Card/CardController.jsx'
   import OnChangeEvent from './OnChangeEvent/onChange.jsx'
   import ColorPicker from './ColorPicker/colorPicker.jsx'
   import ToDoApp from './ToDoApp/ToDoApp.jsx'
+  import Clock from './DigitalClock/clock.jsx'
 function App() {
   return (
     <>
@@ -20,6 +21,8 @@ function App() {
     <OnChangeEvent></OnChangeEvent>
     <ColorPicker></ColorPicker>
     <ToDoApp></ToDoApp>
+    <Clock></Clock>
+
     </div> </>
   )
 }
