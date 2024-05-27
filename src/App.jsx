@@ -8,6 +8,8 @@ import Card from './Card/CardController.jsx'
   import ColorPicker from './ColorPicker/colorPicker.jsx'
   import ToDoApp from './ToDoApp/ToDoApp.jsx'
   import Clock from './DigitalClock/clock.jsx'
+  import UseContext from './Hook/UseContext/ComponentA.jsx'
+  import StopWatch from './StopWatch/StopWatch.jsx'
 function App() {
   return (
     <>
@@ -22,6 +24,9 @@ function App() {
     <ColorPicker></ColorPicker>
     <ToDoApp></ToDoApp>
     <Clock></Clock>
+    <UseContext></UseContext>
+    <StopWatch></StopWatch>
+    
 
     </div> </>
   )
